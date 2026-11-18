@@ -26,3 +26,9 @@ The workbook used for comparison was the supplied GAM export dated October 21, 2
 HTML validation passed recommended html-validate checks with style-policy rules no-inline-style and no-raw-characters disabled. No live GAM API or available inventory is queried. Projections are constant-rate scenarios, not guaranteed delivery or GAM forecasts.
 
 The private source workbook, reference results, and screenshots are excluded from the published files. SAX 1.6.0 license is distributed alongside the online page.
+
+## v6.1 — independent warning and site filters
+
+Changing site, type or status now preserves the selected warning category. Warning cards have a site selector and show counts for that site's active line items. The campaign list has its own category selector, persistent filter chips, a distinct filtered/general view banner, and explicit category/site titles. Only matching line items are included, even when healthy siblings share an order; selected-subset totals and the visible/total line-item count are labeled. Data-quality checks remain separate from performance warnings. Removing a warning preserves the site; clear-all resets both.
+
+Validated with 172 browser assertions covering all six categories, all sites, count consistency, healthy sibling exclusion, search/type combinations, reset behavior, keyboard expansion, warning labels, and responsive widths. The calculation engine is unchanged and all 32 core tests pass.
